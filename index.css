@@ -1,0 +1,77 @@
+/* Style all input fields */
+input {
+  width: 85%;
+  padding: 12px;
+  position : relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: content-box;
+  margin-top: 6px;
+  margin-bottom:6px;
+}
+
+.button {
+  background-color: #246e8b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+}
+  
+
+
+
+/* Style the container for inputs */
+.container {
+  background-color: #805e5e;
+  position : relative;
+  background-position: center;
+  padding : 35px;
+  width: 500px;
+  height: 850px;
+  left : 30%;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
+

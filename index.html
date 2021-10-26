@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+   <h2><center><u>Registration Form</u></center></h2>
+    <div class="section-center">
+	<form id="form">
+	
+    <div class="container">
+	
+	 <label for="name">Name:</label><br><br>
+    <input type="text" id="name" name="name" required  placeholder="enter your full name">
+	<br><br>
+    <label for="username">Username:</label><br><br>
+    <input type="text" id="username" name="username" required  placeholder="enter your username"  maxlength="20">
+    <br><br>
+    <label for="psw">Password:</label><br><br>
+    <input type="password" id="psw" name="psw"  placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one special character and one uppercase and lowercase letter" required  maxlength="8">
+    <br><br> 
+	<label for="email">Email:</label><br><br>
+    <input type="text" id="email" name="email" required  placeholder="enter your email">
+    <br><br>
+    <label for="dateofbirth">Date of Birth:</label><br><br>
+    <input type="date" id="dateofbirth" name="dateofbirth" required  placeholder="dd-mm-yy" >
+	<br><br>
+	<label for="city">City:</label><br><br>
+	<select id="city">
+        <option >SELECT THE CITY</option>
+        <option>Mumbai</option>
+        <option >New Delhi</option>
+        <option >Chennai</option>
+        <option >Hyderabad</option>
+        </select>
+	<br><br>
+	<label for="programminglanguagesknown">Programming Languages Known:</label><br><br>
+    <input type="checkbox" id="c" value="C" >C
+        <br>
+        <input type="checkbox" id="cpp" value="C++" >C++
+        <br>
+        <input type="checkbox" id="java" value="Java" >Java
+        <br>
+        <input type="checkbox" id="javascript" value="Javascript" >Javascript
+        <br>
+        <input type="checkbox" id="python" value="Python" >Python
+        <br>
+	  <br><br>
+	 
+	 
+	 
+	<button class="button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspREGISTER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+     </div>
+	</div>
+  </form>
+  <script src="Registration.js"></script>
+
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="special character" class="invalid">A <b> one special character</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+</body>
+</html>
